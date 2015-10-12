@@ -1,0 +1,641 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{0988C39E-7D96-45F4-BCA7-95C47CAB0D18}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "AirplaneWar"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "AirplaneWar"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "true"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX"
+                    AssemblyName = "Microsoft.DirectX"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3D"
+                    AssemblyName = "Microsoft.DirectX.Direct3D"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.Direct3D.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3DX"
+                    AssemblyName = "Microsoft.DirectX.Direct3DX"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.Direct3DX.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.DirectInput"
+                    AssemblyName = "Microsoft.DirectX.DirectInput"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.DirectInput.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.DirectPlay"
+                    AssemblyName = "Microsoft.DirectX.DirectPlay"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.DirectPlay.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.DirectSound"
+                    AssemblyName = "Microsoft.DirectX.DirectSound"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.DirectSound.dll"
+                    AssemblyFolderKey = "hklm\dn\manageddx"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "airplane.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DplayForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DplayForm.resx"
+                    DependentUpon = "DplayForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Form1.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form1.resx"
+                    DependentUpon = "Form1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "hangar.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "InputDevice.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Landscape.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LoadTerrainGrid.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "meshobject.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MyAirplane.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MyMesh.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Physics.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Radar.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "readme.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ShootingClass.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "shot.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "timer.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "media\airplane.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\bihull.bmp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\map.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\objects.dat"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\point.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\readme.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\SAT256.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\shot.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terreno.x"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "media\terrenoz.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\wings.bmp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\hangars\concrete_redish.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\hangars\concrete_trim.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\hangars\concrete_trim_moss.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\hangars\hangar.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\hangars\hangarplane.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\hangars\lphangar.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\sound\machgun.wav"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\ps_texture_4k.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\ps_texture_simple.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\single.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno1_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno10_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno11_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno12_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno13_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno14_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno15_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno16_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno17_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno18_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno19_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno2_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno20_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno21_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno22_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno23_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno24_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno25_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno26_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno27_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno28_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno29_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno3_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno30_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno31_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno32_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno33_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno34_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno35_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno36_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno37_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno38_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno39_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno4_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno40_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno41_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno42_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno43_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno44_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno45_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno46_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno47_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno48_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno49_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno5_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno50_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno51_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno52_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno53_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno54_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno55_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno56_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno57_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno58_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno59_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno6_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno60_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno61_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno62_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno63_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno64_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno65_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno66_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno67_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno68_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno69_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno7_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno70_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno71_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno72_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno73_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno74_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno75_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno76_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno77_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno78_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno79_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno8_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno80_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno81_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terreno9_01.x"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "media\terrain\terrenoinfo.dat"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

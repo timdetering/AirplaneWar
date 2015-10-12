@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirplaneWar", "AirplaneWar.csproj", "{0988C39E-7D96-45F4-BCA7-95C47CAB0D18}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AirplaneWarSetup", "..\AirplaneWarSetup\AirplaneWarSetup.vdproj", "{74F62ED0-1D43-4DCE-A615-396FCCA290C2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0988C39E-7D96-45F4-BCA7-95C47CAB0D18}.Debug.ActiveCfg = Debug|.NET
+		{0988C39E-7D96-45F4-BCA7-95C47CAB0D18}.Debug.Build.0 = Debug|.NET
+		{0988C39E-7D96-45F4-BCA7-95C47CAB0D18}.Release.ActiveCfg = Release|.NET
+		{0988C39E-7D96-45F4-BCA7-95C47CAB0D18}.Release.Build.0 = Release|.NET
+		{74F62ED0-1D43-4DCE-A615-396FCCA290C2}.Debug.ActiveCfg = Debug
+		{74F62ED0-1D43-4DCE-A615-396FCCA290C2}.Release.ActiveCfg = Release
+		{74F62ED0-1D43-4DCE-A615-396FCCA290C2}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
