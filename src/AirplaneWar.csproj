@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0988C39E-7D96-45F4-BCA7-95C47CAB0D18}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>AirplaneWar</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AirplaneWar</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX">
+      <Name>Microsoft.DirectX</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D">
+      <Name>Microsoft.DirectX.Direct3D</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX">
+      <Name>Microsoft.DirectX.Direct3DX</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.Direct3DX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectInput">
+      <Name>Microsoft.DirectX.DirectInput</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectPlay">
+      <Name>Microsoft.DirectX.DirectPlay</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.DirectPlay.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound">
+      <Name>Microsoft.DirectX.DirectSound</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.DirectSound.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\manageddx</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="airplane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hangar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputDevice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Landscape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoadTerrainGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="meshobject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyAirplane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyMesh.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Physics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShootingClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="timer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <Content Include="media\airplane.x" />
+    <Content Include="media\bihull.bmp" />
+    <Content Include="media\hangars\concrete_redish.jpg" />
+    <Content Include="media\hangars\concrete_trim.jpg" />
+    <Content Include="media\hangars\concrete_trim_moss.jpg" />
+    <Content Include="media\hangars\hangar.jpg" />
+    <Content Include="media\hangars\hangarplane.x" />
+    <Content Include="media\hangars\lphangar.x" />
+    <Content Include="media\map.jpg" />
+    <Content Include="media\objects.dat" />
+    <Content Include="media\point.jpg" />
+    <Content Include="media\readme.txt" />
+    <Content Include="media\SAT256.jpg" />
+    <Content Include="media\shot.x" />
+    <Content Include="media\sound\machgun.wav" />
+    <Content Include="media\terrain\ps_texture_4k.jpg" />
+    <Content Include="media\terrain\ps_texture_simple.jpg" />
+    <Content Include="media\terrain\single.x" />
+    <Content Include="media\terrain\terreno10_01.x" />
+    <Content Include="media\terrain\terreno11_01.x" />
+    <Content Include="media\terrain\terreno12_01.x" />
+    <Content Include="media\terrain\terreno13_01.x" />
+    <Content Include="media\terrain\terreno14_01.x" />
+    <Content Include="media\terrain\terreno15_01.x" />
+    <Content Include="media\terrain\terreno16_01.x" />
+    <Content Include="media\terrain\terreno17_01.x" />
+    <Content Include="media\terrain\terreno18_01.x" />
+    <Content Include="media\terrain\terreno19_01.x" />
+    <Content Include="media\terrain\terreno1_01.x" />
+    <Content Include="media\terrain\terreno20_01.x" />
+    <Content Include="media\terrain\terreno21_01.x" />
+    <Content Include="media\terrain\terreno22_01.x" />
+    <Content Include="media\terrain\terreno23_01.x" />
+    <Content Include="media\terrain\terreno24_01.x" />
+    <Content Include="media\terrain\terreno25_01.x" />
+    <Content Include="media\terrain\terreno26_01.x" />
+    <Content Include="media\terrain\terreno27_01.x" />
+    <Content Include="media\terrain\terreno28_01.x" />
+    <Content Include="media\terrain\terreno29_01.x" />
+    <Content Include="media\terrain\terreno2_01.x" />
+    <Content Include="media\terrain\terreno30_01.x" />
+    <Content Include="media\terrain\terreno31_01.x" />
+    <Content Include="media\terrain\terreno32_01.x" />
+    <Content Include="media\terrain\terreno33_01.x" />
+    <Content Include="media\terrain\terreno34_01.x" />
+    <Content Include="media\terrain\terreno35_01.x" />
+    <Content Include="media\terrain\terreno36_01.x" />
+    <Content Include="media\terrain\terreno37_01.x" />
+    <Content Include="media\terrain\terreno38_01.x" />
+    <Content Include="media\terrain\terreno39_01.x" />
+    <Content Include="media\terrain\terreno3_01.x" />
+    <Content Include="media\terrain\terreno40_01.x" />
+    <Content Include="media\terrain\terreno41_01.x" />
+    <Content Include="media\terrain\terreno42_01.x" />
+    <Content Include="media\terrain\terreno43_01.x" />
+    <Content Include="media\terrain\terreno44_01.x" />
+    <Content Include="media\terrain\terreno45_01.x" />
+    <Content Include="media\terrain\terreno46_01.x" />
+    <Content Include="media\terrain\terreno47_01.x" />
+    <Content Include="media\terrain\terreno48_01.x" />
+    <Content Include="media\terrain\terreno49_01.x" />
+    <Content Include="media\terrain\terreno4_01.x" />
+    <Content Include="media\terrain\terreno50_01.x" />
+    <Content Include="media\terrain\terreno51_01.x" />
+    <Content Include="media\terrain\terreno52_01.x" />
+    <Content Include="media\terrain\terreno53_01.x" />
+    <Content Include="media\terrain\terreno54_01.x" />
+    <Content Include="media\terrain\terreno55_01.x" />
+    <Content Include="media\terrain\terreno56_01.x" />
+    <Content Include="media\terrain\terreno57_01.x" />
+    <Content Include="media\terrain\terreno58_01.x" />
+    <Content Include="media\terrain\terreno59_01.x" />
+    <Content Include="media\terrain\terreno5_01.x" />
+    <Content Include="media\terrain\terreno60_01.x" />
+    <Content Include="media\terrain\terreno61_01.x" />
+    <Content Include="media\terrain\terreno62_01.x" />
+    <Content Include="media\terrain\terreno63_01.x" />
+    <Content Include="media\terrain\terreno64_01.x" />
+    <Content Include="media\terrain\terreno65_01.x" />
+    <Content Include="media\terrain\terreno66_01.x" />
+    <Content Include="media\terrain\terreno67_01.x" />
+    <Content Include="media\terrain\terreno68_01.x" />
+    <Content Include="media\terrain\terreno69_01.x" />
+    <Content Include="media\terrain\terreno6_01.x" />
+    <Content Include="media\terrain\terreno70_01.x" />
+    <Content Include="media\terrain\terreno71_01.x" />
+    <Content Include="media\terrain\terreno72_01.x" />
+    <Content Include="media\terrain\terreno73_01.x" />
+    <Content Include="media\terrain\terreno74_01.x" />
+    <Content Include="media\terrain\terreno75_01.x" />
+    <Content Include="media\terrain\terreno76_01.x" />
+    <Content Include="media\terrain\terreno77_01.x" />
+    <Content Include="media\terrain\terreno78_01.x" />
+    <Content Include="media\terrain\terreno79_01.x" />
+    <Content Include="media\terrain\terreno7_01.x" />
+    <Content Include="media\terrain\terreno80_01.x" />
+    <Content Include="media\terrain\terreno81_01.x" />
+    <Content Include="media\terrain\terreno8_01.x" />
+    <Content Include="media\terrain\terreno9_01.x" />
+    <Content Include="media\terrain\terrenoinfo.dat" />
+    <Content Include="media\terrenoz.x" />
+    <Content Include="media\wings.bmp" />
+    <Content Include="readme.txt" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="media\terreno.x" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

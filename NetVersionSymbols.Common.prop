@@ -1,0 +1,42 @@
+<!--
+  To update run:
+    curl -L https://gist.github.com/timdetering/8dbefb988d529b152908b176e3ece520/raw/ > ./NetVersionSymbols.Common.prop.gist
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Choose>
+    <When Condition=" $(TargetFrameworkVersion) == 'v2.0' ">
+      <PropertyGroup>
+        <CustomConstants >$(CustomConstants);NET_20</CustomConstants>
+      </PropertyGroup>
+    </When>
+    <When Condition=" $(TargetFrameworkVersion) == 'v3.0' ">
+      <PropertyGroup>
+        <CustomConstants >$(CustomConstants);NET_30</CustomConstants>
+        <CustomConstants >$(CustomConstants);NET_20</CustomConstants>
+      </PropertyGroup>
+    </When>
+    <When Condition=" $(TargetFrameworkVersion) == 'v3.5' ">
+      <PropertyGroup>
+        <CustomConstants >$(CustomConstants);NET_35</CustomConstants>
+        <CustomConstants >$(CustomConstants);NET_30</CustomConstants>
+        <CustomConstants >$(CustomConstants);NET_20</CustomConstants>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <CustomConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.5.1')))) &gt;= 0">$(CustomConstants);NET_451</CustomConstants>
+        <CustomConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.5')))) &gt;= 0">$(CustomConstants);NET_45</CustomConstants>
+        <CustomConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.0')))) &gt;= 0">$(CustomConstants);NET_40</CustomConstants>
+        <CustomConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('3.5')))) &gt;= 0">$(CustomConstants);NET_35</CustomConstants>
+        <CustomConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('3.0')))) &gt;= 0">$(CustomConstants);NET_30</CustomConstants>
+        <CustomConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('2.0')))) &gt;= 0">$(CustomConstants);NET_20</CustomConstants>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);$(CustomConstants)</DefineConstants>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Message Text="FOO .Net version=$(TargetFrameworkVersion)" Importance="High" />
+  </Target>
+</Project>
