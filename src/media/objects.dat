@@ -1,0 +1,7 @@
+#path file collision positionx y z yaw pitch roll
+media\hangars\ hangarplane.x 0 22000 123 44000 0 0 0
+media\hangars\ lphangar.x 0 22150 125.5 44000 0 0 0
+media\hangars\ lphangar.x 0 21850 125.5 44000 0 0 0
+media\hangars\ lphangar.x 0 22150 125.5 43800 180 0 0
+media\hangars\ lphangar.x 0 22000 125.5 43800 180 0 0
+media\hangars\ lphangar.x 0 21850 125.5 43800 180 0 0
