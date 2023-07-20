@@ -2,7 +2,10 @@
 
 _<https://github.com/timdetering/AirplaneWar>_
 
-**Airplane War** is intended to be a 3D World War I airplane simulator in C# and using DirectX 9.
+**Needs Managed DirectX**  
+`\WINDOWS\Microsoft.NET\Managed DirectX\v4.09.00.0900\Microsoft.DirectX.dll`
+
+_Airplane War_ is intended to be a 3D World War I airplane simulator in C# and using DirectX 9.
 
 ## Controls
 
@@ -16,10 +19,6 @@ Keyboard:
 Joysticks/Gamepads:
 
 * Just play around with it, standard controls.
-
-## To-do
-
-* [ ] Upgrade project files to Visual Studio 2022.
 
 ## References
 
